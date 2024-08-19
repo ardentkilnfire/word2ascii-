@@ -1,6 +1,6 @@
 {
     "name": "word2ascii",
-    "version": "0.0.1",
+    "version": "0.0.0",
     "description": "",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
@@ -8,7 +8,8 @@
     "type": "module",
     "scripts": {
         "format": "prettier --write .",
-        "build": "tsup"
+        "build": "tsup",
+        "lint": "pnpm format && tsc"
     },
     "exports": {
         ".": {
@@ -21,7 +22,7 @@
                 "import": "./dist/index.js"
             }
         },
-        "./package.json" : "./package.json"
+        "./package.json": "./package.json"
     },
     "files": [
         "dist",
@@ -37,6 +38,7 @@
     "author": "Anil Kumar <akt01.social@gmail.com>",
     "license": "ISC",
     "devDependencies": {
+        "@changesets/cli": "^2.27.7",
         "@types/node": "^22.4.1",
         "prettier": "^3.3.3",
         "tsup": "^8.2.4",
