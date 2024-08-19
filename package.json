@@ -1,0 +1,45 @@
+{
+    "name": "word2ascii",
+    "version": "0.0.1",
+    "description": "",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.js",
+    "type": "module",
+    "scripts": {
+        "format": "prettier --write .",
+        "build": "tsup"
+    },
+    "exports": {
+        ".": {
+            "require": {
+                "types": "./dist/index.d.cts",
+                "require": "./dist/index.cjs"
+            },
+            "import": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js"
+            }
+        },
+        "./package.json" : "./package.json"
+    },
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md",
+        "CHANGELOG.md"
+    ],
+    "keywords": [
+        "ascii, word-2-ascii",
+        "word2ascii",
+        "word-sum"
+    ],
+    "author": "Anil Kumar <akt01.social@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^22.4.1",
+        "prettier": "^3.3.3",
+        "tsup": "^8.2.4",
+        "typescript": "^5.5.4"
+    }
+}
