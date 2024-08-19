@@ -9,7 +9,8 @@
     "scripts": {
         "format": "prettier --write .",
         "build": "tsup",
-        "lint": "pnpm format && tsc"
+        "lint": "pnpm format && tsc",
+        "release": "pnpm lint && pnpm build && changeset publish"
     },
     "exports": {
         ".": {
