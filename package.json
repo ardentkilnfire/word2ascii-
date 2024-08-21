@@ -37,7 +37,7 @@
         "word-sum"
     ],
     "author": "Anil Kumar <akt01.social@gmail.com>",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "@changesets/cli": "^2.27.7",
         "@types/node": "^22.4.1",
